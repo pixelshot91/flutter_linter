@@ -1,0 +1,18 @@
+name: flutter_linter
+description: Some flutter lints to avoid common flutter mistake
+version: 1.0.0
+
+environment:
+  sdk: '>=2.16.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  analyzer: ^4.2.0
+  custom_lint_builder: ^0.0.14
+  source_gen: ^1.2.2
+  analyzer_plugin: any
+  collection: ^1.16.0
+
+dev_dependencies:
+  lints: any
