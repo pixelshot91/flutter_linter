@@ -6,7 +6,7 @@ Some lints have associated quick fix.
 This lint uses the [custom_lint] package.
 
 ## Index
-- [How to install](#How to install)
+- [How to install](#How-to-install)
 - [Lints](#Lints)
 
 ## How to install
