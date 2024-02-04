@@ -18,7 +18,9 @@ class ToStringLinter extends DartLintRule {
   ) {
     context.registry.addMethodInvocation((node) {
       if (node.methodName.name == 'toString') {
-        reporter.reportErrorForNode(_code, node);
+        if (node.target?.staticType?.isDartCoreInt != true) {
+          reporter.reportErrorForNode(_code, node);
+        }
       }
     });
   }

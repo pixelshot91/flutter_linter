@@ -43,6 +43,10 @@ void main() {
   // Should NOT generate a lint as v type is not an "enum" kind
   '${v.name}';
 
+  int myInt = 42;
+  // Should NOT generate a lint for a conversion from int to String
+  final String s = myInt.toString();
+
   Map myMap = {};
   'myMap $myMap';
   // Should generate a lint for myMap.toString()
